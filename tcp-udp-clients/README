@@ -1,0 +1,31 @@
+MAN ANDREI VLAD 321CD
+
+TEMA 2 --- PCOM
+
+1.  SERVER
+- pornim serverul si facem toate setarile initiale necesare
+- dezactivam nagle
+- deschidem socketii de tcp si udp si le facem bind
+
+- ca in laboratorul 8 avem un for pentru socketi (de la 4 la max)
+
+- verificam daca primim comanda de la tastatura, respectiv exit
+
+- verificam daca primim packet pe tcp (in acest caz avem o conectare noua)
+- cautam sa vedem daca avem deja clientul in baza de date
+- daca nu cream unul nou
+- daca e offline, il reconectam si ii trimitem mesajele primite cat era offline
+- daca e deja online, inchidem conexiunea noua
+
+
+- daca primim pe udp, construim un pachet si il trimitem catre clientii care sunt abonati la topic
+
+- altfel, inseamna ca am primit pachet de la client, si executam comanda pe care o vrea
+
+2. CLIENT
+- initializam conexiunea si legarea la server
+- verificam daca primim input de la tastatura si in cazul acesta
+contruim pachete cu comenzi de abonare etc
+- daca nu, primim pachete de la server pe care le afisam
+
+local trec toate testele in afara de quickflow

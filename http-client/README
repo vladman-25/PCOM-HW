@@ -1,0 +1,47 @@
+TEMA 3 - MAN ANDREI VLAD 321CD
+
+Am folosit biblioteca parson pentru construirea body-ului json din pachete
+
+Am implementat partea de client a aplicatiei.
+Programul ruleaza pana la comanda exit.
+--register:
+    -cere username si password
+    -intoarce OK daca se creeaza user-ul nou
+    -intoarce ERROR daca utilizatorul este deja in sistem
+--login
+    -cere username si password
+    -intoarce OK daca se autentifica cu succes
+    -intoarce ERROR si motivul daca parola/userul este gresit
+--enter_library:
+    -verifica daca utilizatorul este autentificat
+    -intoarce ERROR daca nu sau OK daca este
+--get_book:
+    -cere ID
+    -verifica daca utilizatorul este autentificat
+    -verifica daca utlizatorul e in librarie
+    -intoarce ERROR daca id-ul cartii nu exista
+    -intoarce cartea daca id-ul este bun
+--get_books:
+    -verifica daca utilizatorul este autentificat
+    -verifica daca utlizatorul e in librarie
+    -intoarce ERROR daca nu exista carti
+    -intoarce lista de carti
+--add_book:
+    -cere titlu, autor, gen, publicant si nr pagini
+    -verifica daca utilizatorul este autentificat
+    -verifica daca utlizatorul e in librarie
+    -intoarce mesaj de confirmare daca se adauga cartea
+    -intoace ERROR daca formatul nu e bun
+--delete_book:
+    -cere ID
+    -verifica daca utilizatorul este autentificat
+    -verifica daca utlizatorul e in librarie
+    -intoarce ERROR daca nu exista cartea
+    -intoarce confirmare
+--logout:
+    -verifica daca utilizatorul este autentificat
+    -intoarce ERROR daca nu
+    -intoarce confirmare
+
+
+           
